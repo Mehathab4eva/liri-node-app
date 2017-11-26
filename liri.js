@@ -29,14 +29,14 @@ var arg2 = process.argv[3]; // second argument
 
 if (arg1 == "my-tweets")
 {
-		var params = {id: '932896018039017472'};
+		var params = {id: 932896018039017472};
 		client.get ('statuses/lookup',params, function(error, tweets, response){
 			if(error) 
 			{
 				console.log('error')
 			}
-			
-			console.log(response.user);
+			console.log(response);
+			console.log(tweets);
 			
 		});	
 }
